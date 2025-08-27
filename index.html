@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Translator — Frontend Focus</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Simple Translator</h1>
+      <p class="lead">Enter text, choose a language, and get instant translations (powered by LibreTranslate via a minimal Node.js backend).</p>
+    </header>
+
+    <section class="card">
+      <label for="sourceText">Text to translate</label>
+      <textarea id="sourceText" rows="6" placeholder="Type or paste text here..."></textarea>
+
+      <div class="row">
+        <div class="col">
+          <label for="sourceLang">From</label>
+          <select id="sourceLang">
+            <option value="auto">Auto-detect</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label for="targetLang">To</label>
+          <select id="targetLang"></select>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="translateBtn">Translate</button>
+        <button id="swapBtn" title="Swap languages">⇄ Swap</button>
+        <button id="clearBtn" class="muted">Clear</button>
+      </div>
+
+      <label for="result">Translation</label>
+      <textarea id="result" rows="6" readonly placeholder="Translation will appear here..."></textarea>
+    </section>
+
+    <footer>
+      <small>Frontend-focused demo • Minimal Node.js backend proxies requests to a LibreTranslate instance.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

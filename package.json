@@ -1,0 +1,17 @@
+{
+  "name": "simple-translator-proxy",
+  "version": "1.0.0",
+  "description": "Minimal backend to proxy frontend to LibreTranslate (learning/demo)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
